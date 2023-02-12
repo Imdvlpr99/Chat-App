@@ -34,5 +34,9 @@ class LoginView : AppCompatActivity() {
             setInputType(InputView.TYPE.PASSWORD)
             setImeOption(InputView.ACTION.DONE)
         }
+
+        binding.btnRegister.setOnClickListener {
+            startActivity(RegisterView.newIntent(this))
+        }
     }
 }

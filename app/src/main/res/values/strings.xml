@@ -12,5 +12,15 @@
     <string name="login_password_hint">Masukkan Password</string>
     <string name="login_login">Masuk</string>
     <string name="login_register">Belum punya akun? <font color="#2C74B3">Daftar Sekarang</font></string>
+    <string name="login_create_account">Buat Akun</string>
+
+    <!-- REGISTER -->
+    <string name="register_full_name">Nama Lengkap :</string>
+    <string name="register_full_name_hint">Masukkan Nama Lengkap</string>
+    <string name="register_email">Email :</string>
+    <string name="register_email_hint">Masukkan Email</string>
+    <string name="register_password">Password :</string>
+    <string name="register_password_hint">Masukkan Password</string>
+    <string name="register_confirm_password">Konfirmasi Password :</string>
 
 </resources>

@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "81082522281",
+    "project_id": "chatapp-a8c17",
+    "storage_bucket": "chatapp-a8c17.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:81082522281:android:5d4250c1a73e76876d67b8",
+        "android_client_info": {
+          "package_name": "com.imdvlpr.chatapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "81082522281-7ugs4vfodmnvss5hk7d1hgfe667t42h3.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAE_JCjv_EDZdSR4Z64au_DzdNwzY0XfoE"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "81082522281-7ugs4vfodmnvss5hk7d1hgfe667t42h3.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
