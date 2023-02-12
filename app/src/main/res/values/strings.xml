@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">ChatApp</string>
+
+    <string name="count">%1$s/%2$s</string>
+
+    <!-- LOGIN -->
+    <string name="login_title">Login</string>
+    <string name="login_remember_me">Ingat Saya</string>
+    <string name="login_username">Username</string>
+    <string name="login_username_hint">Masukkan Username</string>
+    <string name="login_password">Password</string>
+    <string name="login_password_hint">Masukkan Password</string>
+    <string name="login_login">Masuk</string>
+    <string name="login_register">Belum punya akun? <font color="#2C74B3">Daftar Sekarang</font></string>
+
+</resources>
