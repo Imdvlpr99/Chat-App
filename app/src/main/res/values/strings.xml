@@ -46,4 +46,7 @@
     <string name="search_bar_hint">Masukkan Nama atau Email</string>
     <string name="search_empty">User tidak ditemukan !</string>
 
+    <!-- CHAT -->
+    <string name="chat_entry_hint">Ketik pesan…</string>
+
 </resources>

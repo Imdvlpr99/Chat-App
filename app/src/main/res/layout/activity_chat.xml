@@ -107,6 +107,8 @@
                 android:layout_marginStart="20dp"
                 android:layout_marginEnd="10dp"
                 android:layout_marginBottom="20dp"
+                android:hint="@string/chat_entry_hint"
+                android:textColorHint="@color/colorGrayMedium"
                 android:background="@drawable/background_entry"
                 android:minHeight="44dp"
                 android:padding="15dp"
