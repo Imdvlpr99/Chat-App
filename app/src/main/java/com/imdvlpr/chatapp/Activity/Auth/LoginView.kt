@@ -4,6 +4,7 @@ import android.content.Context
 import android.content.Intent
 import android.os.Bundle
 import android.util.Patterns
+import android.widget.Toast
 import com.imdvlpr.chatapp.Activity.Main.MainActivity
 import com.imdvlpr.chatapp.Model.StatusResponse
 import com.imdvlpr.chatapp.R
@@ -97,6 +98,8 @@ class LoginView : BaseActivity(), AuthInterface {
         startActivity(MainActivity.newIntent(this))
     }
 
+    override fun onSuccessUpdateToken() { }
+
     override fun onProgress() {
         if (!isFinishing) showProgress()
     }
@@ -106,7 +109,16 @@ class LoginView : BaseActivity(), AuthInterface {
     }
 
     override fun onFailed(statusResponse: StatusResponse) {
-        if (!isFinishing) {}
+        if (!isFinishing) {
+            when(statusResponse.errorCode) {
+                "203" -> binding.txtPassword.apply {
+                    setInfo("Password Salah !")
+                    setFieldError(true)
+                }
+                "503" -> Toast.makeText(this, "Server Error", Toast.LENGTH_LONG).show()
+            }
+
+        }
     }
 
     override fun onAttach() {

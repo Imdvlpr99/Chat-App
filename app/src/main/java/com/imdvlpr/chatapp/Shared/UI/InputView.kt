@@ -192,6 +192,10 @@ class InputView : ConstraintLayout {
         }
     }
 
+    fun setImageAction(isVisible: Boolean, icon: Int) {
+        binding.imgAction.setVisible(isVisible)
+        binding.imgAction.setImageDrawable(ContextCompat.getDrawable(mContext, icon))
+    }
 
     fun setInfo(info: String, infoSize: Float = 14f) {
         binding.lblAlert.text = info

@@ -21,6 +21,24 @@
         <item name="android:textSize">14sp</item>
     </style>
 
+    <style name="TextView.PoppinsBold24spWhite">
+        <item name="fontFamily">@font/poppins_bold</item>
+        <item name="android:textColor">@android:color/white</item>
+        <item name="android:textSize">24sp</item>
+    </style>
+
+    <style name="TextView.PoppinsRegular10spWhite">
+        <item name="fontFamily">@font/poppins_regular</item>
+        <item name="android:textColor">@android:color/white</item>
+        <item name="android:textSize">10sp</item>
+    </style>
+
+    <style name="TextView.PoppinsRegular12spWhite">
+        <item name="fontFamily">@font/poppins_regular</item>
+        <item name="android:textColor">@android:color/white</item>
+        <item name="android:textSize">12sp</item>
+    </style>
+
     <style name="TextView.PoppinsRegular14spWhite">
         <item name="fontFamily">@font/poppins_regular</item>
         <item name="android:textColor">@android:color/white</item>
@@ -31,6 +49,12 @@
         <item name="fontFamily">@font/poppins_semibold</item>
         <item name="android:textColor">@android:color/white</item>
         <item name="android:textSize">14sp</item>
+    </style>
+
+    <style name="TextView.PoppinsSemibold16spWhite">
+        <item name="fontFamily">@font/poppins_semibold</item>
+        <item name="android:textColor">@android:color/white</item>
+        <item name="android:textSize">16sp</item>
     </style>
 
     <style name="TextView.PoppinsSemibold20spWhite">

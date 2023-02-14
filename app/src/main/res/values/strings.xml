@@ -1,4 +1,4 @@
-<resources>
+<resources xmlns:tools="http://schemas.android.com/tools">
     <string name="app_name">ChatApp</string>
 
     <string name="count">%1$s/%2$s</string>
@@ -22,5 +22,28 @@
     <string name="register_password">Password :</string>
     <string name="register_password_hint">Masukkan Password</string>
     <string name="register_confirm_password">Konfirmasi Password :</string>
+
+    <!-- MENU -->
+    <string name="menu_home">Beranda</string>
+    <string name="menu_status">Status</string>
+    <string name="menu_search">Cari Teman</string>
+
+    <!-- HOME -->
+    <string name="home_title">Chats</string>
+    <string name="home_status_title">Status</string>
+    <string name="home_search_title">Find Friends</string>
+
+    <!-- PROFILE -->
+    <string name="profile_title">Profile</string>
+    <string name="profile_logout">Keluar</string>
+    <string name="profile_name">Nama</string>
+    <string name="profile_email">Email</string>
+    <string name="profile_phone">Nomor Telepon</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <!-- SEARCH -->
+    <string name="search_bar_hint">Masukkan Nama atau Email</string>
+    <string name="search_empty">User tidak ditemukan !</string>
 
 </resources>

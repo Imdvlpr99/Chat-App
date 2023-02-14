@@ -11,7 +11,6 @@ import android.provider.MediaStore
 import android.util.Patterns
 import android.widget.Toast
 import androidx.activity.result.contract.ActivityResultContracts
-import com.imdvlpr.chatapp.Activity.Main.MainActivity
 import com.imdvlpr.chatapp.Model.StatusResponse
 import com.imdvlpr.chatapp.R
 import com.imdvlpr.chatapp.Shared.Base.BaseActivity
@@ -180,6 +179,7 @@ class RegisterView : BaseActivity(), AuthInterface {
     }
 
     override fun onSuccessLogin() {}
+    override fun onSuccessUpdateToken() {}
 
     override fun onProgress() {
         if (!isFinishing) showProgress()

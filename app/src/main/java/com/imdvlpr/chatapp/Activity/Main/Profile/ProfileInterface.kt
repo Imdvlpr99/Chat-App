@@ -1,14 +1,11 @@
-package com.imdvlpr.chatapp.Activity.Auth
+package com.imdvlpr.chatapp.Activity.Main.Profile
 
 import com.imdvlpr.chatapp.Model.StatusResponse
 import net.ist.btn.shared.base.BaseView
 
-interface AuthInterface: BaseView {
-    fun onSuccessRegister()
+interface ProfileInterface: BaseView {
 
-    fun onSuccessLogin()
-
-    fun onSuccessUpdateToken()
+    fun onSuccessLogout()
 
     fun onProgress()
 

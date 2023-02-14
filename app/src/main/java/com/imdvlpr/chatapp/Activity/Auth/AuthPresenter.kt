@@ -54,5 +54,21 @@ class AuthPresenter(private val context: Context) : BasePresenter<AuthInterface>
         }
     }
 
+    fun updateToken(token: String) {
+        view?.onProgress()
+        dispatchGroup?.enter()
+
+        API?.updateToken(token) { status ->
+            val mainHandler = Handler(Looper.getMainLooper())
+            mainHandler.post {
+                when (status.isSuccess) {
+                    true -> view?.onSuccessUpdateToken()
+                    else -> if (!status.isCanceled) view?.onFailed(status)
+                }
+                dispatchGroup?.leave()
+            }
+        }
+    }
+
     override fun onDetach() { view = null }
 }
