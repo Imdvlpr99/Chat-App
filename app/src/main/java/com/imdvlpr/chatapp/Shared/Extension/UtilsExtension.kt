@@ -34,7 +34,7 @@ fun decodeImage(encodedImage: String): Bitmap {
 }
 
 fun getReadableDate(date: Date): String {
-    return SimpleDateFormat("dd/MM/yy HH:mm", Locale.getDefault()).format(date)
+    return SimpleDateFormat("dd/MM/yyyy HH:mm", Locale.getDefault()).format(date)
 }
 
 fun <T : Parcelable?> Intent.getParcelable(key: String, className: Class<T>): T? {
