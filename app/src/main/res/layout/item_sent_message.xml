@@ -5,26 +5,56 @@
     android:layout_width="match_parent"
     android:layout_height="wrap_content">
 
-    <TextView
-        android:id="@+id/txtMessage"
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/messageContainer"
         style="@style/TextView.PoppinsRegular12spWhite"
-        android:layout_width="0dp"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_margin="5dp"
+        android:layout_marginVertical="5dp"
+        android:layout_marginEnd="10dp"
         android:background="@drawable/background_sent_message"
-        android:padding="12dp"
-        app:layout_constraintWidth_max="wrap"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintWidth_percent="0.80"/>
+        app:layout_constraintWidth_max="wrap"
+        app:layout_constraintWidth_percent="0.8">
 
-    <TextView
-        android:id="@+id/txtDate"
-        style="@style/TextView.PoppinsRegular10spWhite"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:textColor="@color/colorGrayMedium"
-        app:layout_constraintEnd_toEndOf="@+id/txtMessage"
-        app:layout_constraintTop_toBottomOf="@+id/txtMessage" />
+        <TextView
+            android:id="@+id/txtMessage"
+            style="@style/TextView.PoppinsRegular14spWhite"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingStart="12dp"
+            android:paddingTop="12dp"
+            android:paddingEnd="10dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageView
+            android:id="@+id/icRead"
+            android:layout_width="18dp"
+            android:layout_height="18dp"
+            android:layout_marginBottom="10dp"
+            android:layout_marginEnd="10dp"
+            android:src="@drawable/ic_double_check"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/txtMessage"
+            app:tint="@color/colorPrimary" />
+
+        <TextView
+            android:id="@+id/txtDate"
+            style="@style/TextView.PoppinsRegular12spWhite"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingStart="10dp"
+            android:paddingEnd="5dp"
+            android:gravity="end"
+            android:textColor="@color/colorGrayMedium"
+            app:layout_constraintBottom_toBottomOf="@+id/icRead"
+            app:layout_constraintEnd_toStartOf="@+id/icRead"
+            app:layout_constraintTop_toTopOf="@+id/icRead" />" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

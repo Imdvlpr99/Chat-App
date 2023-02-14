@@ -10,5 +10,6 @@ data class Message(
     var receiverId: String = "",
     var message: String = "",
     var dateTime: String = "",
+    var isRead: Boolean = false,
     var dateObject: Date = Date()
 ): Parcelable

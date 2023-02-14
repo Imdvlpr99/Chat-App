@@ -5,26 +5,43 @@
     android:layout_width="match_parent"
     android:layout_height="wrap_content">
 
-    <TextView
-        android:id="@+id/txtMessage"
-        style="@style/TextView.PoppinsRegular12spWhite"
+    <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:layout_margin="5dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginVertical="5dp"
         android:background="@drawable/background_receive_message"
-        android:padding="12dp"
-        app:layout_constraintWidth_max="wrap"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintWidth_percent="0.80"/>
+        app:layout_constraintWidth_max="wrap"
+        app:layout_constraintWidth_percent="0.80">
 
-    <TextView
-        android:id="@+id/txtDate"
-        style="@style/TextView.PoppinsRegular10spWhite"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:textColor="@color/colorGrayMedium"
-        app:layout_constraintStart_toStartOf="@+id/txtMessage"
-        app:layout_constraintTop_toBottomOf="@+id/txtMessage" />
+        <TextView
+            android:id="@+id/txtMessage"
+            style="@style/TextView.PoppinsRegular14spWhite"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:layout_marginTop="12dp"
+            android:paddingHorizontal="12dp"
+            app:layout_constraintEnd_toStartOf="@+id/txtDate"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/txtDate"
+            style="@style/TextView.PoppinsRegular12spWhite"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="10dp"
+            android:layout_marginBottom="5dp"
+            android:textColor="@color/colorGrayMedium"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/txtMessage" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

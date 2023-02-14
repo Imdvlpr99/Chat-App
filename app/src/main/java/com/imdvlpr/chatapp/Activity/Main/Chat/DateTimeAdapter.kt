@@ -33,7 +33,7 @@ class DateTimeAdapter(
         fun bind(item: ChatMessage) = with(itemView) {
             val binding = ItemChatDateBinding.bind(itemView)
 
-            binding.dateTime.text = item.dateTime
+            binding.dateTime.text = getReadableDate(item.dateTime)
             binding.charRecycler.adapter = ChatAdapter(item.data, senderId)
         }
     }

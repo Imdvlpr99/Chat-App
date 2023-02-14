@@ -3,6 +3,7 @@ package com.imdvlpr.chatapp.Activity.Main.Chat
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import androidx.core.content.ContextCompat
 import androidx.recyclerview.widget.RecyclerView
 import com.imdvlpr.chatapp.Model.Message
 import com.imdvlpr.chatapp.R
@@ -47,6 +48,11 @@ class ChatAdapter(
             val binding = ItemSentMessageBinding.bind(itemView)
             binding.txtMessage.text = item.message
             binding.txtDate.text = item.dateTime
+
+            when(item.isRead) {
+                true -> binding.icRead.setColorFilter(ContextCompat.getColor(context, R.color.colorPrimary))
+                false -> binding.icRead.setColorFilter(ContextCompat.getColor(context, R.color.colorGrayMedium))
+            }
         }
     }
 
